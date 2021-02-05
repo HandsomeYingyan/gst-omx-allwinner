@@ -54,6 +54,9 @@ gst_omx_video_get_format_from_omx (OMX_COLOR_FORMATTYPE omx_colorformat)
     case OMX_COLOR_FormatYUV422SemiPlanar:
       format = GST_VIDEO_FORMAT_NV16;
       break;
+    case OMX_COLOR_FormatYVU420Planar:
+      format = GST_VIDEO_FORMAT_YV12;
+      break;
     case OMX_COLOR_FormatYCbYCr:
       format = GST_VIDEO_FORMAT_YUY2;
       break;
